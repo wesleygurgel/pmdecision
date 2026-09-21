@@ -75,6 +75,20 @@ python -m pm_decision --apply --only-date 2026-09-21 --repo conecta-industria --
 
 Envio para aprovação no PM Decision continua **manual**.
 
+## Agendamento (Task Scheduler)
+
+Tarefa `pm-decision-daily`: segunda a sexta às **10:00**, com `--apply`.
+
+- Runner: `scripts\run-daily.cmd`
+- Logs: `%LOCALAPPDATA%\pm-decision\logs\daily-YYYY-MM-DD.log`
+- Re-registrar (ou recriar após mudança de path):
+
+```bat
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\register-daily-task.ps1
+```
+
+A tarefa usa a última pasta salva se o File Explorer não for respondido (timeout 60s).
+
 ## Testes
 
 Instalar a extra de desenvolvimento e rodar a suíte **completa** (obrigatório depois de qualquer mudança):

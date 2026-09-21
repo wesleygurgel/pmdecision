@@ -61,7 +61,7 @@ Sem `--repo`, abre o File Explorer por até 60s.
 - F1 Fundação — feito
 - F2 Playwright dry-run — feito
 - F3 `--apply` + `--only-date` — código pronto; primeiro save real ainda a conferir na UI
-- F4 job diário / Task Scheduler — depois do primeiro apply validado
+- F4 job diário / Task Scheduler — feito (`pm-decision-daily`, seg–sex 10:00)
 - F5 envio para aprovação — fora
 
 ## Critérios de pronto do v1

@@ -27,5 +27,10 @@ Datas no formato ISO. Alterar só com confirmação do usuário.
 - Tela Consulta, exceto leitura para idempotência
 - Envio para aprovação
 - UI gráfica (exceção: o folder picker nativo do Windows, D13)
-- Agendamento no Task Scheduler (só depois do dry-run + um dia real conferido)
 - Ponto da empresa empregadora (app celular)
+
+## 2026-09-21 — agendamento
+
+| ID | Decisão | Motivo |
+|---|---|---|
+| D16 | Task Scheduler `pm-decision-daily`: seg–sex às 10:00 com `--apply` | Pedido do usuário; runner em `scripts/run-daily.cmd`, re-registro via `scripts/register-daily-task.ps1`. |

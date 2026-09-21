@@ -19,6 +19,7 @@ Bug, feature nova ou refactor: **TDD**. Escrever teste que falha em `tests/`, im
 - Código em `src/pm_decision/` (CLI `python -m pm_decision`)
 - Testes em `tests/` (`python -m pytest`)
 - Dry-run é o padrão; `--apply` grava no PM Decision
+- Job diário no Task Scheduler: `pm-decision-daily` (seg–sex 10:00) — ver `HOW-RUN.md`
 - Credenciais em `.env` (gitignored). Modelo de detalhamento: `gpt-4o-mini`
 - Gerador original de horários (referência): `C:\Users\Wesley-\ponto.py`
 
