@@ -12,9 +12,12 @@ Este diretório é a fonte de contexto para qualquer agente. **Confie no código
 4. [DETALHAMENTO.md](DETALHAMENTO.md) — File Explorer (timeout 60s / última pasta) e texto com tag + primeira pessoa
 5. [PLANO-IMPLEMENTACAO.md](PLANO-IMPLEMENTACAO.md) — o que implementar e em que ordem
 
+Bug, feature nova ou refactor: **TDD**. Escrever teste que falha em `tests/`, implementar, rodar `python -m pytest` (suíte completa). Sem atalho de “só o arquivo que eu toquei”.
+
 ## Estado do repositório
 
 - Código em `src/pm_decision/` (CLI `python -m pm_decision`)
+- Testes em `tests/` (`python -m pytest`)
 - Dry-run é o padrão; `--apply` grava no PM Decision
 - Credenciais em `.env` (gitignored). Modelo de detalhamento: `gpt-4o-mini`
 - Gerador original de horários (referência): `C:\Users\Wesley-\ponto.py`

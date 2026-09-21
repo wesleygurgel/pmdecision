@@ -9,12 +9,14 @@ v1 de código existe (dry-run por padrão). `--apply` grava de verdade — usar 
 - Senha só em `.env`
 - Um dia = dois saves; se o segundo falhar, reportar quantos dias deste run já gravaram
 - OpenAI `gpt-4o-mini` opcional; fallback Git / texto genérico
+- Feature e correção seguem TDD; a suíte completa (`python -m pytest`) precisa passar antes de considerar pronto
 
 ## Estrutura
 
 ```
 pm-decision/
   docs/
+  tests/
   .env.example
   pyproject.toml
   src/pm_decision/

@@ -1,0 +1,17 @@
+---
+description: TDD obrigatório — teste primeiro e suíte completa antes de concluir
+alwaysApply: true
+---
+
+# TDD e suíte de testes
+
+Toda correção de bug e toda feature nova neste repositório segue TDD.
+
+1. Escrever um teste que falha, com nome de cenário (ex.: `test_day_with_only_morning_gets_complementary_afternoon`).
+2. Implementar o mínimo para o teste passar.
+3. Rodar a suíte **completa**: `python -m pytest`
+4. Só então considerar o trabalho pronto.
+
+Não implementar feature sem teste. Não concluir com um arquivo isolado se a suíte não rodou. Não apontar Playwright, OpenAI, File Explorer ou o PM Decision real nos testes — usar mocks e `tmp_path`.
+
+Regressões que precisam continuar verdes: dia com 1 intervalo não está completo; complementar tarde a partir da manhã; dry-run não chama save; detalhamento ≤ 250 caracteres; não automatizar envio para aprovação.
