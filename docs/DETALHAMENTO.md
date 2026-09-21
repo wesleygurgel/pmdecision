@@ -1,6 +1,6 @@
-# Detalhamento (até 180 caracteres)
+# Detalhamento
 
-Campo HTML `Detalhamento`, obrigatório no form. O cliente do timesheet pediu um texto curto sobre o que o colaborador está fazendo. O usuário considera que provavelmente não leem com rigor, mas o limite de **180 caracteres** vale.
+Campo HTML `Detalhamento`, obrigatório (`Detalhe a atividade.`). O textarea não tem `maxlength` no HTML, mas o teto que usamos na geração é **250 caracteres** (tag inclusive).
 
 ## Escolha da pasta (decisão D13)
 
@@ -62,7 +62,7 @@ A **data do último commit não importa**. Sempre usar `HEAD` atual.
 
 ## Como montar o texto
 
-Formato: `[TAG] ` + uma frase em **primeira pessoa** (`Melhorei`, `Ajustei`, `Fiz`, `Implementei`). Total ≤ 180 caracteres, tag inclusive.
+Formato: `[TAG] ` + uma frase em **primeira pessoa** (`Melhorei`, `Ajustei`, `Fiz`, `Implementei`). Total ≤ **250** caracteres, tag inclusive.
 
 A tag é o **primeiro diretório** sob `REPOSITORIES_ROOT`, em maiúsculas. Ex.: pasta `...\first\conecta-industria\conecta-industria-frontend` → `[CONECTA-INDUSTRIA]`.
 

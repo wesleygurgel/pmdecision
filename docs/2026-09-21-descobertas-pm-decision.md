@@ -50,7 +50,7 @@ Form `#novolancamentoform` POST `/pmdecision/Lancamento/Create`, `multipart/form
 | `DataLancamento` | hidden, obrigatório | Montado em JS: `{Dia}/{MesAnoId text}` → `16/09/2026`. Recusa data futura |
 | `HoraInicio` | sim | Máscara `99:99` |
 | `HoraTermino` | sim | Deve ser posterior a `HoraInicio` |
-| `Detalhamento` | **sim** (client-side) | Mensagem: `Detalhe a atividade.` Limite de negócio do cliente: **180 caracteres** |
+| `Detalhamento` | **sim** (client-side required; sem maxlength no HTML) | Mensagem: `Detalhe a atividade.` Nosso teto de geração: **250** caracteres. |
 | `LancamentoId` | hidden | `0` na criação |
 | `__RequestVerificationToken` | sim | Header também usado nos POSTs AJAX |
 

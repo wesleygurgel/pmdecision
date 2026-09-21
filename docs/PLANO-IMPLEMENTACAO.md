@@ -67,5 +67,5 @@ Sem `--repo`, abre o File Explorer por até 60s.
 - Dry-run não altera dados
 - `--apply` lança exatamente 8h + 1h almoço
 - Não duplica dia já preenchido
-- Detalhamento ≤ 180 e não vazio
+- Detalhamento não vazio, ≤ 250 caracteres
 - Credenciais fora do Git

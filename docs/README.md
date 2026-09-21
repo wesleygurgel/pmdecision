@@ -9,7 +9,7 @@ Este diretório é a fonte de contexto para qualquer agente. **Confie no código
 1. [DECISOES.md](DECISOES.md) — o que já foi decidido (não reabrir sem o usuário)
 2. [2026-09-21-descobertas-pm-decision.md](2026-09-21-descobertas-pm-decision.md) — sistema real (URLs, campos, AJAX, regras)
 3. [REGRAS-NEGOCIO.md](REGRAS-NEGOCIO.md) — 8h, almoço, feriados, atrasados
-4. [DETALHAMENTO.md](DETALHAMENTO.md) — File Explorer (timeout 60s / última pasta) e texto de até 180 caracteres
+4. [DETALHAMENTO.md](DETALHAMENTO.md) — File Explorer (timeout 60s / última pasta) e texto com tag + primeira pessoa
 5. [PLANO-IMPLEMENTACAO.md](PLANO-IMPLEMENTACAO.md) — o que implementar e em que ordem
 
 ## Estado do repositório
@@ -21,7 +21,6 @@ Este diretório é a fonte de contexto para qualquer agente. **Confie no código
 
 ## O que este projeto NÃO é
 
-- Não é o ponto real da empresa empregadora (esse é no app do celular)
 - Não envia hours para aprovação (tela `/EnvioAprovacaoTimesheet` fica manual)
 - Não deve gravar senha em arquivo versionado nem nestes docs
 

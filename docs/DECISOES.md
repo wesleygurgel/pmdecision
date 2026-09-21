@@ -15,7 +15,7 @@ Datas no formato ISO. Alterar só com confirmação do usuário.
 | D07 | Pular fim de semana, feriado nacional BR e dia já lançado | 07/09/2026 (Independência) não foi lançado; sábados/domingos também não. |
 | D08 | Não lançar data futura | Validador do form: `Não pode ser uma data futura.` |
 | D09 | Credenciais só em `.env` gitignored | Login AD; senha não vai para o Git. |
-| D10 | Detalhamento ≤ 180 caracteres a partir do Git da pasta escolhida | Pedido do cliente do timesheet. Fallback simples se a IA/Git falhar. |
+| D10 | Detalhamento a partir do Git da pasta escolhida, teto **250 caracteres** | Combinado: 250 é o limite prático. O form não tem maxlength. |
 | D11 | Demanda permanece vazia | Histórico do usuário está vazio nesse campo. |
 | D12 | Cliente/projeto/função/atividade: usar os únicos disponíveis no mês aberto, sem hardcode de IDs mensais | Em 09/2026: MGI / MDIC / Desenvolvedor Sênior / Desenvolvimento. `MesAnoId` muda todo mês. |
 | D13 | Escolha da pasta: **diálogo nativo do Windows** (estilo File Explorer), timeout **60s**, senão usa a **última pasta salva** | O usuário pode não estar no PC quando o job rodar. `--repo` fica só como override de teste. |
